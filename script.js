@@ -36,8 +36,9 @@ $(document).ready(function () {
             envelope.style.visibility = 'hidden';
             envelope.style.pointerEvents = 'none';
             document.body.style.overflow = 'auto'; // allow scrolling
-        }, 1000);
+        }, 10);
 
+        document.documentElement.scrollTop = 0;
         startCountdown();
         loadMap();
         initScrollAnimations();
